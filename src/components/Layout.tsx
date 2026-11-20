@@ -11,7 +11,7 @@ const ROL: Record<string, string> = {
 // Módulos del menú; los que aún no están construidos se marcan "Pronto" (ver tablero)
 const MODULOS = [
   { to: '/dashboard', t: 'Dashboard Indicadores', i: 'dashboard', roles: ['administrador', 'tecnico', 'responsable'], listo: true },
-  { to: '/equipos', t: 'Inventario Equipos', i: 'box', roles: ['administrador', 'responsable'], listo: true },
+ { to: '/equipos', t: 'Inventario Equipos', i: 'box', roles: ['administrador', 'tecnico', 'responsable'], listo: true },
   { to: '/mantenimientos', t: 'Mantenimientos', i: 'wrench', roles: ['administrador', 'tecnico'], listo: true },
   { to: '/fallas', t: 'Registro de Fallas', i: 'alert', roles: ['administrador', 'tecnico'], listo: true },
 ];

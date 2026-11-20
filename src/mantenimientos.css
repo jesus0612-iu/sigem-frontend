@@ -1,0 +1,28 @@
+/* Módulo Mantenimientos (RF-06, RF-07, RF-08) - se apoya en las clases de app.css */
+.mt-cod { font-family: ui-monospace, Consolas, monospace; font-size: 10.5px; font-weight: 700; color: #0f172a; display: block; margin-bottom: 4px; }
+.mt-tipo { display: inline-block; font-size: 10.5px; font-weight: 700; padding: 2px 8px; border-radius: 6px; border: 1px solid; }
+.mt-tipo.preventivo { background: #eff6ff; color: #1d4ed8; border-color: #bfdbfe; }
+.mt-tipo.correctivo { background: #fef2f2; color: #dc2626; border-color: #fecaca; }
+.mt-eq { display: block; font-weight: 700; color: #0f172a; }
+.mt-desc { display: block; font-size: 11px; color: #94a3b8; max-width: 330px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; margin-top: 2px; }
+.mt-tec { display: inline-flex; align-items: center; gap: 6px; font-weight: 600; color: #334155; }
+.mt-tec svg { color: #0a74c9; }
+.mt-real { display: block; color: #16a34a; font-size: 11px; font-weight: 700; margin-top: 2px; }
+.mt-est { display: inline-flex; align-items: center; gap: 6px; font-size: 11.5px; font-weight: 600; padding: 4px 12px; border-radius: 999px; border: 1px solid; }
+.mt-est::before { content: ''; width: 6px; height: 6px; border-radius: 50%; background: currentColor; }
+.mt-est.completado { background: #ecfdf5; color: #047857; border-color: #a7f3d0; }
+.mt-est.en_proceso { background: #eff6ff; color: #1d6fb8; border-color: #bfdbfe; }
+.mt-est.programado { background: #fffbeb; color: #b45309; border-color: #fde68a; }
+.mt-acc { text-align: right; white-space: nowrap; }
+.mt-lapiz { background: transparent; border: 0; color: #94a3b8; cursor: pointer; padding: 6px; }
+.mt-lapiz:hover { color: #0a74c9; }
+.mt-form { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+.mt-form label { display: grid; gap: 5px; font-size: 11.5px; font-weight: 700; color: #475569; }
+.mt-form input, .mt-form select, .mt-form textarea { padding: 9px 10px; border: 1px solid #e2e8f0; border-radius: 8px; font-size: 13px; font-family: inherit; font-weight: 400; }
+.mt-form .ancho { grid-column: 1 / -1; }
+.mt-form .mt-botones { grid-column: 1 / -1; display: flex; gap: 10px; justify-content: flex-end; }
+@media (max-width: 900px) { .mt-form { grid-template-columns: 1fr; } }
+@media print {
+  .side, .top, .pag-acc, .filtros, .mt-lapiz, .mt-acc-col, .mt-form-panel { display: none !important; }
+  .app { display: block; background: #fff; }
+}
