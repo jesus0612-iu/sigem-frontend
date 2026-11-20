@@ -1,0 +1,37 @@
+.lg-page { min-height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 32px 16px;
+  background: radial-gradient(900px 500px at 10% 95%, rgba(37, 99, 235, .16), transparent 60%), radial-gradient(700px 400px at 95% 5%, rgba(14, 116, 224, .10), transparent 60%), #0f172a; }
+.lg-logo { width: 64px; height: 64px; border-radius: 18px; display: grid; place-items: center; color: #fff;
+  background: linear-gradient(135deg, #2aa0f5, #0d6fc2); box-shadow: 0 0 0 10px rgba(30, 144, 255, .08), 0 12px 32px rgba(14, 116, 224, .35); }
+.lg-titulo { margin: 22px 0 6px; color: #fff; font-size: 2rem; font-weight: 800; letter-spacing: -.01em; }
+.lg-sub { margin: 0 0 26px; color: #94a3b8; font-size: .9rem; text-align: center; }
+.lg-card { width: 100%; max-width: 500px; background: #f3f4f6; border-radius: 26px; padding: 26px 30px 22px; box-shadow: 0 30px 60px rgba(0, 0, 0, .45); }
+.lg-rapido { background: #f8f9fb; border: 1px solid #e5e7eb; border-radius: 16px; padding: 14px; margin-bottom: 22px; }
+.lg-rapido-cab { display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px; }
+.lg-rapido-tit { display: flex; align-items: center; gap: 6px; font-size: 11px; font-weight: 700; letter-spacing: .04em; color: #475569; }
+.lg-badge { background: #dbeafe; color: #1d6fb8; font-size: 10px; font-weight: 600; padding: 3px 8px; border-radius: 6px; }
+.lg-roles { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; }
+.lg-rol { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; padding: 12px 6px; display: flex; flex-direction: column; align-items: center; gap: 3px; cursor: pointer; color: #1e293b; transition: .15s; }
+.lg-rol:hover { border-color: #cbd5e1; }
+.lg-rol.activo { border-color: #c084fc; background: #faf5ff; }
+.lg-rol strong { font-size: 12px; }
+.lg-rol small { font-size: 10px; color: #94a3b8; }
+.lg-label { display: block; font-size: 13px; font-weight: 700; color: #1e293b; margin-bottom: 7px; }
+.lg-fila { display: flex; justify-content: space-between; align-items: baseline; }
+.lg-link { font-size: 12px; font-weight: 600; color: #0b6fb8; text-decoration: none; }
+.lg-link:hover { text-decoration: underline; }
+.lg-campo { display: flex; align-items: center; gap: 10px; background: #fff; border: 1px solid #e2e8f0; border-radius: 12px; padding: 0 14px; height: 48px; margin-bottom: 16px; }
+.lg-campo:focus-within { border-color: #0b6fb8; box-shadow: 0 0 0 3px rgba(11, 111, 184, .15); }
+.lg-campo input { flex: 1; border: 0; outline: 0; background: transparent; font-size: 14px; padding: 0; color: #1e293b; min-width: 0; }
+.lg-ico { color: #94a3b8; display: grid; }
+.lg-ojo { background: transparent; border: 0; padding: 0; color: #94a3b8; cursor: pointer; display: grid; }
+.lg-opciones { align-items: center; margin: 4px 0 18px; }
+.lg-check { display: flex; align-items: center; gap: 8px; font-size: 13px; color: #475569; cursor: pointer; }
+.lg-check input { width: 16px; height: 16px; accent-color: #0b6fb8; }
+.lg-ssl { display: flex; align-items: center; gap: 5px; font-size: 12px; font-weight: 600; color: #16a34a; }
+.lg-entrar { width: 100%; height: 50px; border: 0; border-radius: 12px; color: #fff; font-size: 14px; font-weight: 700; cursor: pointer;
+  display: flex; align-items: center; justify-content: center; gap: 9px; background: linear-gradient(90deg, #0a74c9, #0b5394); box-shadow: 0 10px 22px rgba(10, 116, 201, .35); }
+.lg-entrar:disabled { opacity: .7; cursor: wait; }
+.lg-error { background: #fee2e2; color: #991b1b; padding: 9px 12px; border-radius: 8px; margin-bottom: 12px; font-size: 13px; }
+.lg-aviso { background: #dbeafe; color: #1e40af; padding: 9px 12px; border-radius: 8px; margin-bottom: 12px; font-size: 13px; }
+.lg-pie { margin: 18px 0 0; text-align: center; font-size: 10.5px; line-height: 1.6; color: #94a3b8; }
+.lg-pie strong { color: #64748b; }
